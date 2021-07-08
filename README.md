@@ -6,6 +6,10 @@ Result on TUM RGB-D datasets:
 
 <a> <img src="doc/ATE.jpg" 
 alt="ATE" width="480" height="360" border="5" /></a>
+
+Trajectory comparison
+<a> <img src="doc/traj.jpg" 
+alt="ATE" width="480" height="360" border="5" /></a>
 # ORB-SLAM2
 **Authors:** [Raul Mur-Artal](http://webdiis.unizar.es/~raulmur/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/), [J. M. M. Montiel](http://webdiis.unizar.es/~josemari/) and [Dorian Galvez-Lopez](http://doriangalvez.com/) ([DBoW2](https://github.com/dorian3d/DBoW2))
 
