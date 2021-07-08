@@ -1,0 +1,85 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+Camera.type: "PinHole"
+
+# height: 720
+# width: 1280
+# distortion_model: "plumb_bob"
+# D: [0.0, 0.0, 0.0, 0.0, 0.0]
+# K: [524.7322387695312, 0.0, 637.4806518554688, 0.0, 524.7322387695312, 347.8765563964844, 0.0, 0.0, 1.0]
+# R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+# P: [524.7322387695312, 0.0, 637.4806518554688, 0.0, 0.0, 524.7322387695312, 347.8765563964844, 0.0, 0.0, 0.0, 1.0, 0.0]
+
+Camera.fx: 262.366119385
+Camera.fy: 262.366119385
+Camera.cx: 318.740325928
+Camera.cy: 173.938278198
+
+# k1, k2, k3, p1, p2.
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+
+Camera.width: 640
+Camera.height: 360
+
+# Camera frames per second 
+Camera.fps: 30
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Camera extrinsics
+Tbc: !!opencv-matrix
+  cols: 4
+  rows: 4
+  dt: f
+  data: [0.0799539, -0.1258453,  0.9888227, 0.189,
+        -0.9967013, -0.0239525,  0.0775426, 0.015,
+        0.0139264, -0.9917607, -0.1273453, 0.855,
+        0.0, 0.0, 0.0, 1.0]
+
+# Odometry noise (in a moment) (unit: mm, rad)
+Odo_x_steady_noise: 1.0
+Odo_y_steady_noise: 1.0
+Odo_theta_steady_noise: 0.005
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 2000
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -3.5 # -1.8
+Viewer.ViewpointF: 500
+Visual.Ratio: 1
+
