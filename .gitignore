@@ -21,3 +21,5 @@ build/
 ./Vocabulary/*.txt
 .vcode/
 lib
+./Models
+Models/segnet_pascal.caffemodel
